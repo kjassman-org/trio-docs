@@ -2,7 +2,7 @@
 
 ## Apple Watch
 
-On an Apple Watch, you can add carbs and boluses, set a temporary target, and display BG, IOB, COB, etc.
+On an Apple Watch, you can add carbs and boluses, set a temporary target, and display BG, IOB, COB, etc. Which actions are available depends on the [Watch Usage Mode](#watch-usage-mode).
 
 Trio has a companion app for the Apple Watch.  
 The companion app shows the loop status and current insulin and carbs onboard. 
@@ -14,6 +14,22 @@ Newer versions of the Apple Watch have better battery life and support an always
 
 ### Confirm Bolus Faster
 <!-- TODO: Add description of confirm bolus faster -->
+
+### Watch Usage Mode
+
+Choose which actions can be started from the Apple Watch app in `Settings -> Devices -> Smart Watch -> Apple Watch -> Watch Usage Mode`.
+
+| Mode | Bolus, carbs and meals | Overrides and temp targets |
+|---|:---:|:---:|
+| **Companion** (default) | ✅ | ✅ |
+| **Adjustments** | ❌ | ✅ |
+| **View** | ❌ | ❌ |
+
+- In **View** mode the watch is read-only: it still shows glucose, IOB, COB and loop status, and you can still snooze alerts.
+- Buttons for actions the selected mode does not allow are hidden on the watch.
+- Trio on the iPhone also rejects these actions if they are sent from the watch, for example by an outdated watch app. The watch then shows "Not allowed by the Watch Usage Mode in Trio settings."
+
+This is useful if someone else might handle the watch, for example a child's friends, or if you only want to use the watch for monitoring.
 
 ### Contacts Configuration
 <!-- TODO: Add contacts configuration instructions -->
